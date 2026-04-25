@@ -1,0 +1,69 @@
+.gallery{
+
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(180px,1fr));
+  gap:16px;
+
+  margin-top:30px;
+
+}
+
+/* card */
+
+.gallery-card{
+
+  position:relative;
+
+  border-radius:12px;
+  overflow:hidden;
+
+  background:#f3f4f6;
+
+  box-shadow:
+  0 4px 10px rgba(0,0,0,0.08);
+
+  transition:.25s;
+
+}
+
+.gallery-card:hover{
+
+  transform:translateY(-4px);
+
+  box-shadow:
+  0 10px 25px rgba(0,0,0,0.15);
+
+}
+
+/* image */
+
+.gallery-card img{
+
+  width:100%;
+  height:180px;
+
+  object-fit:cover;
+
+  transition:.4s;
+
+}
+
+.gallery-card:hover img{
+
+  transform:scale(1.08);
+
+}
+
+/* empty */
+
+.gallery-empty{
+
+  margin-top:40px;
+
+  text-align:center;
+
+  font-size:18px;
+
+  opacity:.6;
+
+}
